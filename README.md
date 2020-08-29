@@ -4,7 +4,7 @@ Below are the list of courses for MSBA
 
 ### Bootcamp
 - Bootcamp: Digital Transformation
-- [Programming for Analyics](root/Programming for Analytics)
+- [Programming for Analyics](root/Programming for Analytics.md)
 
 ### 2020 FALL
 - Statistics for Data Science
