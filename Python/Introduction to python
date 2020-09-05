@@ -1,0 +1,25 @@
+$ go get github.com/moqada/speakerdeck
+
+import (
+	"fmt"
+	"io/ioutil"
+
+	"github.com/moqada/speakerdeck"
+)
+
+// Fetch Slide
+slide, _ := speakerdeck.GetSlide("https://speakerdeck.com/sjk521/python-introduction")
+fmt.Println(slide.Title, slide.User.username, slide.Category.Name)
+// PyCon JP 2014 Python + Hive on AWS EMRで貧者のログ集計 achiku Technology
+
+// Download pdf file as byte[]
+pdf, _ := slide.DownloadPDF()
+
+// Save pdf file to current directory
+ioutil.WriteFile("./" + slide.Slug + ".pdf", pdf, 0644)
+
+
+
+
+
+
